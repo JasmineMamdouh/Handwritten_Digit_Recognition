@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../images/background2.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Change text color to white for better visibility */
+    font-size: 18px;
+}
+
+
+h1 {
+    font-size: 40px; /* Larger font size for headings */
+}
+
+.canvas-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the canvases */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+canvas {
+    border: 1px solid navy; /* Optional: Add a border for visibility */
+    margin: 0 10px; /* Add some space between the canvases */
+}
+
+#canvas {
+    background-color: black; /* Remove the background color from the drawing canvas */
+}
+
+#predictedCanvas {
+    background-color: black; /* Remove the background color from the predicted canvas */
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Digit Recognition</title>
+</head>
+<body>
+    <h1>Draw a Digit</h1>
+    
+    <div class="canvas-container">
+        <canvas id="canvas" width="350" height="350"></canvas>
+    </div>
+    
+    <br>
+    
+    <label for="thicknessSlider">Pen Thickness: <span id="thicknessValue">20</span></label>
+    <input type="range" id="thicknessSlider" min="1" max="50" value="20" />
+    
+    <button id="predictButton">Predict Digit</button>
+    <button id="clearButton">Clear Canvas</button>
+    
+    <h2 id="result"></h2> <!-- Display predicted digit here -->
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
